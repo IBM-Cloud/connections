@@ -1,0 +1,27 @@
+Simple Samples to access IBM Connections from IBM Bluemix
+https://github.com/IBM-Bluemix/connections
+© Copyright IBM Corp. 2014
+
+Author: Niklas Heidloff (niklas_heidloff@de.ibm.com)
+
+
+Social SDK
+https://github.com/OpenNTF/SocialSDK
+Available under Apache license v2
+https://github.com/OpenNTF/SocialSDK/blob/master/license/LICENSE
+
+
+google-json
+https://code.google.com/p/google-gson
+Available under Apache license v2
+http://www.apache.org/licenses/LICENSE-2.0
+
+
+AngularJS
+https://angularjs.org
+Available under MIT license
+https://github.com/angular/angular.js/blob/master/LICENSE
+
+
+Services from IBM Connections Social Cloud are accessed via REST APIs
+https://developer.ibm.com/social

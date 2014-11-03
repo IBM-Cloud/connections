@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="simpleApp">
+<head>
+<meta charset="utf-8">
+<title>Simple IBM Bluemix Sample accessing IBM Connections Social Cloud</title>
+<link href="images/sbt.png" rel="shortcut icon">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+<script
+	src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+<script
+	src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular-sanitize.js"></script>
+	
+<script src="controller.js"></script>
+</head>
+    
+<body ng-controller="ProfileCtrlHelper">
+
+	<h2>Simple IBM Bluemix Sample accessing IBM Connections Social Cloud</h2>
+
+	<div ng-hide="singedIn" >
+		<div style="margin-bottom:5px;">Log in against <a href="http://www-03.ibm.com/software/products/en/ibm-connections-social-cloud">IBM Connections Social Cloud</a></div>
+		<button onclick="signIn()">Sign In</button>
+	</div>
+	
+	<div ng-hide="!singedIn" >
+		<div style="margin-top:15px;margin-bottom:5px;">You are logged in as ...</div>
+		Name: {{profile.displayName}}
+		<div></div>
+		ID: {{profile.id}}
+	</div>
+
+	<div style="margin-top:45px;"><a href="https://apps.na.collabservtest.lotus.com/manage/account/dashboardHandler/input">Log in the IBM Connections Social Cloud user interface</a></div>
+	<div style="margin-top:15px;"><a href="https://github.com/IBM-Bluemix/connections">Learn more about this sample</a></div>
+	<div style="margin-top:15px;"><a href="https://developer.ibm.com/social/">Learn more about IBM Connections app dev</a></div>
+</body>
+
+<script>
+function signIn() {
+	window.open("login.html?redirectURL=" + encodeURIComponent(document.URL), "_self");
+}
+</script>
+
+</html>

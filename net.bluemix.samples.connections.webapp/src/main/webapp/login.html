@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+<title>Simple IBM Bluemix Sample accessing IBM Connections Social Cloud</title>
+<script type="text/javascript" src="login.js"></script>
+</head>
+<body onLoad="self.focus()">
+	<h2>Simple IBM Bluemix Sample accessing IBM Connections Social Cloud</h2>
+	<div>Log in against <a href="http://www-03.ibm.com/software/products/en/ibm-connections-social-cloud">IBM Connections Social Cloud</a></div>
+	<div style="margin-top:15px;">You can log in using the credentials of a test user: samantha_daryn@zetains.com, pw: icsappdev2014</div>
+	<div style="margin-top:15px;">You can also request your own <a href="https://developer.ibm.com/social/cloud/#envs">IBM Connections Social Cloud test environment</a></div>
+	<div style="margin-top:25px;" role="main">
+		<form role="form" method='post' id='ibmsbt.loginActionForm' onSubmit='submitOnClick(this);'>
+			<label name='wrongCredsMessage' id='wrongCredsMessage' style='color: red; display: none;'></label>
+			<label id='basicLoginFormUsername' for='username'>User name:</label><br>
+			<input type='text' name='username' id='username' /><br>
+			<label id='basicLoginFormPassword' for='password'>Password:</label><br>
+			<input type='password' name='password' id='password' /><br>
+			<input type="submit" id="basicLoginFormOK" value="Sign In" name="submitBtn" /> 
+			<input type='button' id='basicLoginFormCancel' onClick='cancelOnClick()' value='Cancel' />
+		</form>
+	</div>
+	<div style="margin-top:45px;"><a href="https://apps.na.collabservtest.lotus.com/manage/account/dashboardHandler/input">Log in the IBM Connections Social Cloud user interface</a></div>
+	<div style="margin-top:15px;"><a href="https://github.com/IBM-Bluemix/connections">Learn more about this sample</a></div>
+	<div style="margin-top:15px;"><a href="https://developer.ibm.com/social/">Learn more about IBM Connections app dev</a></div>
+	<script>
+        onLoginPageLoad();
+    </script>
+</body>
+</html>
